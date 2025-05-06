@@ -1,15 +1,13 @@
+// src/App.js
 import React from 'react';
-import { useTranslation } from 'react-i18next';
+import UseCallbackEx from './UseCallbackEx';
 
-function HelloWorld() {
-  const { t } = useTranslation();
-
+function App() {
   return (
-    <div>
-      <h1>{t('welcome')}</h1>
+    <div className="App">
+      <UseCallbackEx />
     </div>
   );
 }
 
-
-export default HelloWorld;
+export default App;
