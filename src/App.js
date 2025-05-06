@@ -1,12 +1,15 @@
 import React from 'react';
-import SimpleForm from './SimpleForm';
+import { useTranslation } from 'react-i18next';
 
-function App() {
+function HelloWorld() {
+  const { t } = useTranslation();
+
   return (
-    <div className="App">
-      <SimpleForm />
+    <div>
+      <h1>{t('welcome')}</h1>
     </div>
   );
 }
 
-export default App;
+
+export default HelloWorld;
