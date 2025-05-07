@@ -1,10 +1,10 @@
 import React from 'react';
-import Counter from './Counter';
+import DynamicList from './DynamicList';
 
 function App() {
   return (
     <div className="App">
-      <Counter />
+      <DynamicList />
     </div>
   );
 }
