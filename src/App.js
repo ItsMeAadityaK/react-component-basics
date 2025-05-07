@@ -1,10 +1,10 @@
 import React from 'react';
-import UseMemoEx from './UseMemoEx';
+import Counter from './Counter';
 
 function App() {
   return (
     <div className="App">
-      <UseMemoEx />
+      <Counter />
     </div>
   );
 }
