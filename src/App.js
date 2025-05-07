@@ -1,11 +1,10 @@
-// src/App.js
 import React from 'react';
-import UseCallbackEx from './UseCallbackEx';
+import UseMemoEx from './UseMemoEx';
 
 function App() {
   return (
     <div className="App">
-      <UseCallbackEx />
+      <UseMemoEx />
     </div>
   );
 }
