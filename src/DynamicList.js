@@ -6,7 +6,12 @@ function DynamicList() {
 
   const handleAddItem = () => {
     if (inputValue.trim() !== '') {
-      setItems([...items, inputValue]);
+      // Wrong Buggy version:
+      // items.push(inputValue); // Direct state mutation — won't trigger re-render
+      // setItems(items); // Using same array reference
+
+      // Right Correct version:
+      setItems([...items, inputValue]); // Creates new array -> triggers re-render
       setInputValue('');
     }
   };
