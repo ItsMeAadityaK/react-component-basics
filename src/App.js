@@ -1,22 +1,26 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import Home from './Home';
 import Profile from './Profile';
+import Counter from './Counter';
 
-function App() {
-  return (
-    <Router>
-      <nav style={{ padding: '1rem' }}>
-        <Link to="/" style={{ marginRight: '1rem' }}>Home</Link>
+const App = () => (
+  <BrowserRouter>
+    <header>
+      <nav>
+        <Link to="/">Home</Link>
         <Link to="/profile">Profile</Link>
+        <Link to="/counter">Counter</Link>
       </nav>
-
+    </header>
+    <main>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/profile" element={<Profile />} />
+        <Route path="/counter" element={<Counter />} />
       </Routes>
-    </Router>
-  );
-}
+    </main>
+  </BrowserRouter>
+);
 
 export default App;
