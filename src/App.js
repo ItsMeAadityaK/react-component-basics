@@ -1,10 +1,10 @@
 import React from 'react';
-import DynamicList from './DynamicList';
+import UseEffectEx from './UseEffectEx';
 
 function App() {
   return (
     <div className="App">
-      <DynamicList />
+      <UseEffectEx />
     </div>
   );
 }
